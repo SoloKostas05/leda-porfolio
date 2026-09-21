@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>Portfolio — Leda Kaberidi</title>
+
+    <meta name="description" content="Visual Artist & Director Portfolio" />
+    <meta name="author" content="Leda Kaberidi" />
+
+    <!-- Inter web font from bunny.net -->
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS v4 Browser Build -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @custom-variant dark (&:where(.dark, .dark *));
+      @theme {
+        --default-font-family: "Inter";
+      }
+    </style>
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body class="antialiased bg-zinc-950 text-zinc-100 selection:bg-purple-600 selection:text-white">
+    <!-- Page Container -->
+    <div class="min-h-dvh min-w-80 bg-zinc-950 text-zinc-100">
+      <!-- Page Content -->
+      <main
+        id="page-content"
+        class="mx-auto flex max-w-6xl flex-auto flex-col px-4 pb-16 lg:px-8 lg:pb-24"
+      >
+        <!-- Main Header -->
+        <header
+          id="page-header"
+          class="flex flex-none items-center justify-between py-8 border-b border-zinc-900 mb-10"
+        >
+          <div class="flex items-center gap-3">
+            <!-- Logo -->
+            <a
+              href="#"
+              class="text-2xl font-light tracking-widest text-zinc-100 hover:text-purple-400 transition-colors"
+            >
+              Leda
+            </a>
+
+            <!-- Static Sun Icon -->
+            <div
+              class="relative inline-flex size-9 items-center justify-center text-zinc-400 select-none"
+              aria-hidden="true"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Nav -->
+          <nav class="flex items-center gap-6">
+            <a
+              href="#films"
+              class="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+            >
+              Projects
+            </a>
+            <a
+              href="#contact"
+              class="text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors"
+            >
+              Hire me
+            </a>
+          </nav>
+        </header>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-12 items-stretch">
+          
+          <!-- Photo -->
+          <div class="col-span-1 md:col-span-5 flex">
+            <div class="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 shadow-2xl w-full flex">
+              <img
+                src="assets/images/photo.jpg"
+                alt="Leda Kaberidi"
+                class="w-full h-full min-h-[320px] md:min-h-[440px] aspect-[4/5] object-cover filter contrast-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent pointer-events-none"></div>
+            </div>
+          </div>
+
+          <!-- Intro -->
+          <div
+            class="relative col-span-1 flex flex-col justify-end overflow-hidden rounded-2xl border border-zinc-800/80 bg-zinc-900/60 p-8 md:p-12 md:col-span-7 backdrop-blur-xl shadow-2xl min-h-[320px] md:min-h-[440px]"
+          >
+            <div
+              aria-hidden="true"
+              class="absolute -top-24 -right-24 size-80 rounded-full bg-purple-900/20 blur-3xl pointer-events-none"
+            ></div>
+            <div
+              aria-hidden="true"
+              class="absolute -bottom-20 -left-20 size-72 rounded-full bg-zinc-800/40 blur-3xl pointer-events-none"
+            ></div>
+
+            <div class="relative z-10">
+              <span class="text-xs uppercase tracking-widest text-purple-400 font-semibold mb-3 block">
+                "The most personal is the most creative"
+              </span>
+              <h1 class="text-4xl lg:text-5xl font-semibold tracking-tight text-white">
+                Leda Kaberidi
+              </h1>
+              <p class="mt-4 leading-relaxed text-zinc-300 text-base md:text-lg max-w-xl">
+Leda Kaberidi (Greek: Λήδα Καμπερίδη, born 04 May 2004) is a filmmaker, editor from Greece. She graduated from the Athens Music School. She has studied Film Production at SAE Creative Media Education. She also currently studies Industrial Management and Technology at the University of Piraeus and attending the course of YAFKA School for VFX composing.              </p>
+            </div>
+          </div>
+
+
+          <!-- ═══ Description Video═══ -->
+
+          <!-- Project 1 (Video) -->
+          <article
+            class="group col-span-1 md:col-span-12 overflow-hidden rounded-3xl border border-zinc-800/80 bg-zinc-900/40 p-6 md:p-10 lg:p-12 hover:border-zinc-700 transition-all duration-300 shadow-xl"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+              <div class="md:col-span-5 flex flex-col justify-between order-2 md:order-1 py-2">
+                <div>
+                  <span class="text-xs text-purple-400 font-medium tracking-widest uppercase">visual summary</span>
+                  <h3 class="text-3xl lg:text-4xl font-medium text-white mt-2 group-hover:text-purple-300 transition-colors">
+                    A piece of my work
+                  </h3>
+                  <p class="text-sm md:text-base text-zinc-400 mt-4 leading-relaxed">
+                    This is a one-minute video showing scenes from all the projects.
+                  </p>
+                </div>
+ 
+              </div>
+
+              <div class="md:col-span-7 order-1 md:order-2 overflow-hidden rounded-2xl border border-zinc-800 bg-black aspect-video w-full">
+                <video
+                  controls
+                  playsinline
+                  preload="metadata"
+                  class="w-full h-full object-cover"
+                >
+                  <source src="assets/videos/project1.mp4" type="video/mp4" />
+                  Το πρόγραμμα περιήγησής σας δεν υποστηρίζει την αναπαραγωγή βίντεο.
+                </video>
+              </div>
+            </div>
+          </article>
+
+          <!-- Section Divider Title: Films -->
+          <div id="films" class="col-span-1 md:col-span-12 pt-8">
+            <div class="flex items-center gap-4">
+              <h2 class="text-2xl uppercase tracking-widest text-zinc-400 font-semibold">Films</h2>
+              <div class="h-px bg-zinc-900 flex-1"></div>
+            </div>
+          </div>
+
+
+          <!-- Project 0 (Film) -->
+          <article
+            class="group col-span-1 md:col-span-12 overflow-hidden rounded-3xl border border-zinc-800/80 bg-zinc-900/40 p-6 md:p-10 lg:p-12 hover:border-zinc-700 transition-all duration-300 shadow-xl"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+              <div class="md:col-span-5 flex flex-col justify-between order-2 md:order-1 py-2">
+                <div>
+                  <span class="text-xs text-purple-400 font-medium tracking-widest uppercase">Short Film</span>
+                  <h3 class="text-3xl lg:text-4xl font-medium text-white mt-2 group-hover:text-purple-300 transition-colors">
+                    As I am now so shall you be
+                  </h3>
+                  <p class="text-sm md:text-base text-zinc-400 mt-4 leading-relaxed">
+                    An anxious mother is searching for her missing daughter while she deals with her deepest fears.
+                  </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 font-mono">
+                  <span>2026</span>
+                  <span>•</span>
+                  <span>Director - Edit - Production</span>
+                </div>
+              </div>
+
+              <div class="md:col-span-7 order-1 md:order-2 overflow-hidden rounded-2xl border border-zinc-800 bg-black aspect-video w-full">
+                <img
+                  src="assets/images/project0.jpg"
+                  alt="As I am now so shall you be"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 (Documentary) -->
+          <article
+            class="group col-span-1 md:col-span-12 overflow-hidden rounded-3xl border border-zinc-800/80 bg-zinc-900/40 p-6 md:p-10 lg:p-12 hover:border-zinc-700 transition-all duration-300 shadow-xl"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+              <div class="md:col-span-5 flex flex-col justify-between order-2 md:order-1 py-2">
+                <div>
+                  <span class="text-xs text-purple-400 font-medium tracking-widest uppercase">Short Documentary</span>
+                  <h3 class="text-3xl lg:text-4xl font-medium text-white mt-2 group-hover:text-purple-300 transition-colors">
+                    Lala's Land
+                  </h3>
+                  <p class="text-sm md:text-base text-zinc-400 mt-4 leading-relaxed">
+                    The Portrait of Drag Queen Lala Kolopi and Giorgos, the person behind her. A journey into the dazzling world of drag shows, through Giorgos' story of his path from discovering the persona to her rise as a symbol of freedom, self-expression, and creativity.                  </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 font-mono">
+                  <span>2024</span>
+                  <span>•</span>
+                  <span> Edit - Sound Department</span>
+                </div>
+              </div>
+
+              <div class="md:col-span-7 order-1 md:order-2 overflow-hidden rounded-2xl border border-zinc-800 bg-black aspect-video w-full">
+                <img
+                  src="assets/images/project2.jpg"
+                  alt="Lala's Land"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 (Short film) -->
+          <article
+            class="group col-span-1 md:col-span-12 overflow-hidden rounded-3xl border border-zinc-800/80 bg-zinc-900/40 p-6 md:p-10 lg:p-12 hover:border-zinc-700 transition-all duration-300 shadow-xl"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+              <div class="md:col-span-5 flex flex-col justify-between order-2 md:order-1 py-2">
+                <div>
+                  <span class="text-xs text-purple-400 font-medium tracking-widest uppercase">Short Film</span>
+                  <h3 class="text-3xl lg:text-4xl font-medium text-white mt-2 group-hover:text-purple-300 transition-colors">
+                    Unraveling
+                  </h3>
+                  <p class="text-sm md:text-base text-zinc-400 mt-4 leading-relaxed">
+                    When Phaedra finds herself trapped in a dark, abandoned house with her oppressive partner, the space comes alive, blurring the lines between fantasy and reality. Through a contemporary retelling of the myth of the Labyrinth and the Minotaur, Phaedra is called upon to chart her own path from fear to liberation.
+                  </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 font-mono">
+                  <span>2024</span>
+                  <span>•</span>
+                  <span> Director </span>
+                </div>
+              </div>
+
+              <div class="md:col-span-7 order-1 md:order-2 overflow-hidden rounded-2xl border border-zinc-800 bg-black aspect-video w-full">
+                <img
+                  src="assets/images/project3.jpg"
+                  alt="Unraveling"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+          </article>
+
+          <!-- Section Divider Title: Commercial Works -->
+          <div id="commercial" class="col-span-1 md:col-span-12 pt-8">
+            <div class="flex items-center gap-4">
+              <h2 class="text-2xl uppercase tracking-widest text-zinc-400 font-semibold">Commercial Works</h2>
+              <div class="h-px bg-zinc-900 flex-1"></div>
+            </div>
+          </div>
+
+          <!-- ═══ COMMERCIAL WORKS ═══ -->
+
+          <!-- Commercial 1: Night Gaze -->
+          <article
+            class="group col-span-1 md:col-span-12 overflow-hidden rounded-3xl border border-zinc-800/80 bg-zinc-900/40 p-6 md:p-10 lg:p-12 hover:border-zinc-700 transition-all duration-300 shadow-xl"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+              <div class="md:col-span-5 flex flex-col justify-between order-2 md:order-1 py-2">
+                <div>
+                  <span class="text-xs text-purple-400 font-medium tracking-widest uppercase">Music Video</span>
+                  <h3 class="text-3xl lg:text-4xl font-medium text-white mt-2 group-hover:text-purple-300 transition-colors">
+                    MMLISEIS
+                  </h3>
+                  <p class="text-sm md:text-base text-zinc-400 mt-4 leading-relaxed">
+                    A music video for the artist Rosadenia
+                  </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 font-mono">
+                  <span>2025</span>
+                  <span>•</span>
+                  <span> Edit - Assistant Director</span>
+                </div>
+              </div>
+
+              <div class="md:col-span-7 order-1 md:order-2 overflow-hidden rounded-2xl border border-zinc-800 bg-black aspect-video w-full">
+                <img
+                  src="assets/images/project4.jpg"
+                  alt="Night Gaze"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+          </article>
+
+          <!-- Commercial 2: Immersion & Form -->
+          <article
+            class="group col-span-1 md:col-span-12 overflow-hidden rounded-3xl border border-zinc-800/80 bg-zinc-900/40 p-6 md:p-10 lg:p-12 hover:border-zinc-700 transition-all duration-300 shadow-xl"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+              <div class="md:col-span-5 flex flex-col justify-between order-2 md:order-1 py-2">
+                <div>
+                  <span class="text-xs text-purple-400 font-medium tracking-widest uppercase">Fashion Short Film</span>
+                  <h3 class="text-3xl lg:text-4xl font-medium text-white mt-2 group-hover:text-purple-300 transition-colors">
+                    PHAOS 
+                  </h3>
+                  <p class="text-sm md:text-base text-zinc-400 mt-4 leading-relaxed">
+                    A promotional video for the company PHAOS and its jewelry
+                  </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 font-mono">
+                  <span>2021</span>
+                  <span>•</span>
+                  <span>Director - Edit - DOP </span>
+                </div>
+              </div>
+
+              <div class="md:col-span-7 order-1 md:order-2 overflow-hidden rounded-2xl border border-zinc-800 bg-black aspect-video w-full">
+                <img
+                  src="assets/images/project5.jpg"
+                  alt="Immersion & Form"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+          </article>
+
+          <!-- Commercial 3: Solar Drift -->
+          <article
+            class="group col-span-1 md:col-span-12 overflow-hidden rounded-3xl border border-zinc-800/80 bg-zinc-900/40 p-6 md:p-10 lg:p-12 hover:border-zinc-700 transition-all duration-300 shadow-xl"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+              <div class="md:col-span-5 flex flex-col justify-between order-2 md:order-1 py-2">
+                <div>
+                  <span class="text-xs text-purple-400 font-medium tracking-widest uppercase">Music Video</span>
+                  <h3 class="text-3xl lg:text-4xl font-medium text-white mt-2 group-hover:text-purple-300 transition-colors">
+                    Daughter of the Island
+                  </h3>
+                  <p class="text-sm md:text-base text-zinc-400 mt-4 leading-relaxed">
+                    An unpublished music video for the song by Rico and Teka, “Kori tou Nisiou”
+                  </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 font-mono">
+                  <span>2026</span>
+                  <span>•</span>
+                  <span>Director - Edit - DOP </span>
+                </div>
+              </div>
+
+              <div class="md:col-span-7 order-1 md:order-2 overflow-hidden rounded-2xl border border-zinc-800 bg-black aspect-video w-full">
+                <img
+                  src="assets/images/project6.jpg"
+                  alt="Solar Drift"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+          </article>
+
+          <!-- Contact Section with contact.jpg -->
+          <div
+            id="contact"
+            class="relative col-span-1 overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/70 p-6 md:p-12 lg:p-14 md:col-span-12 backdrop-blur-xl mt-8 shadow-2xl"
+          >
+            <div
+              aria-hidden="true"
+              class="absolute -top-32 -right-32 size-96 rounded-full bg-purple-900/20 blur-3xl pointer-events-none"
+            ></div>
+            <div
+              aria-hidden="true"
+              class="absolute -bottom-32 -left-32 size-96 rounded-full bg-indigo-950/30 blur-3xl pointer-events-none"
+            ></div>
+
+            <div class="relative grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+              <!-- Contact Photo Column -->
+              <div class="md:col-span-5 flex flex-col">
+                <div class="relative overflow-hidden rounded-2xl border border-zinc-800 bg-black w-full h-full min-h-[340px] md:min-h-full">
+                  <img
+                    src="assets/images/contact.jpg"
+                    alt="Contact Leda Kaberidi"
+                    class="w-full h-full object-cover filter contrast-105"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+              </div>
+
+              <!-- Contact Form Column -->
+              <div class="md:col-span-7 flex flex-col justify-center">
+                <span class="text-xs uppercase tracking-widest text-purple-400 font-semibold mb-2 block">Contact</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white">
+                  Let's Collaborate
+                </h2>
+                <p class="mt-3 text-sm md:text-base text-zinc-400 leading-relaxed">
+                  I am available for your directional, editorial, and production needs, as well as creative collaborations                </p>
+
+                <form action="https://formspree.io/f/mdekegla" method="POST" class="mt-8 spac-y-4">
+                  <div>
+                    <label for="name" class="block text-xs uppercase tracking-wider text-zinc-400 mb-1.5 font-medium">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your Name"
+                      class="block w-full rounded-xl bg-zinc-950/80 border border-zinc-800 px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label for="email" class="block text-xs uppercase tracking-wider text-zinc-400 mb-1.5 font-medium">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="your@email.com"
+                      class="block w-full rounded-xl bg-zinc-950/80 border border-zinc-800 px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label for="message" class="block text-xs uppercase tracking-wider text-zinc-400 mb-1.5 font-medium">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Tell me about your project..."
+                      class="block w-full rounded-xl bg-zinc-950/80 border border-zinc-800 px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors resize-none"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full inline-flex items-center justify-center rounded-xl bg-purple-600 hover:bg-purple-500 px-6 py-3.5 text-sm font-semibold text-white transition-colors cursor-pointer shadow-lg shadow-purple-950/50"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <footer
+            class="flex flex-col gap-6 py-10 text-center text-xs text-zinc-500 md:col-span-12 md:flex-row md:justify-between md:items-center md:text-left border-t border-zinc-900 mt-6"
+          >
+            <div>
+              <span class="text-zinc-200 font-medium">Leda Kaberidi</span> ©
+              <span x-text="new Date().getFullYear()"></span>. All rights reserved.
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center gap-6 text-zinc-400">
+              <a
+                href="https://www.instagram.com/leda_kb/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-white transition-colors"
+              >
+                Instagram
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-white transition-colors"
+              >
+                +30 6943692996
+              </a>
+              <a
+                href="mailto:contact@ledakaberidi.com"
+                class="hover:text-white transition-colors"
+              >
+                Email
+              </a>
+            </div>
+          </footer>
+
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
